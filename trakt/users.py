@@ -65,7 +65,8 @@ class UserList(namedtuple('UserList', ['name', 'description', 'privacy',
                                        'sort_by', 'sort_how', 'created_at',
                                        'updated_at', 'item_count',
                                        'comment_count', 'likes', 'trakt',
-                                       'slug', 'user', 'creator'])):
+                                       'slug', 'user', 'creator', 'type',
+                                       'share_link'])):
     """A list created by a Trakt.tv :class:`User`"""
 
     def __init__(self, *args, **kwargs):
